@@ -2,3 +2,6 @@ discord.py
 python-dotenv
 youtube_dl
 discord.py[voice]
+youtube-search-python
+spotipy
+fuzzywuzzy

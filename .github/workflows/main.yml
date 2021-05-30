@@ -15,6 +15,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }} # User of the server you want to ssh into
      
           script: |
-            mkdir test 
-            cd test 
-            touch helloworld
+            cd discord_bots/
+            cd Discord-Music-Quiz/
+            git pull
+            ./run.sh

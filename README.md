@@ -12,6 +12,12 @@ Fill out `.env` with the fields and create `config.json` with your spotify api c
 
 `python bot.py`
 
+## Docker
+
+`docker-compose build`
+
+`docker-compose up`
+
 ## Spotify To Youtube
 
 Modification of [this](https://github.com/saulojoab/Spotify-To-Youtube)

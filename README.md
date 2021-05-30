@@ -1,6 +1,6 @@
 # Discord bot that will run a music quiz
 
-[![Deploy bot](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml/badge.svg)](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml)
+[![Deploy bot](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml)
 
 ## Installation
 

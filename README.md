@@ -1,5 +1,7 @@
 # Discord bot that will run a music quiz
 
+[![Deploy bot](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml/badge.svg)](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml)
+
 ## Installation
 
 `pip install -r requirements.txt`

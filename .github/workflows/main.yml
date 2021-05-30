@@ -17,4 +17,4 @@ jobs:
           script: |
             mkdir test 
             cd test 
-            touch hello
+            touch helloworld

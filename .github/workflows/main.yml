@@ -22,21 +22,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      - name: SSH Remote Commands
-        # You may pin to the exact commit or the version.
-        # uses: appleboy/ssh-action@1d1b21ca96111b1eb4c03c21c14ebb971d2200f6
-        uses: appleboy/ssh-action@v0.1.4
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@master
         with:
-          # ssh host
-          host: ${{ secrets.SSH_HOST }}
-          # ssh port
-          port: 22
-          username: root
-          # ssh password
-          password: ${{ secrets.SSH_PASS }}
-          # execute commands
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
           script: whoami
-

@@ -29,6 +29,7 @@ Usage `python spotifyToYoutube.py <spotify playlist> [filename]`
 `docker-compose up`
 
 **OR**
+https://hub.docker.com/r/rush2sk8/discord-music-quiz
 
 `docker pull rush2sk8/discord-music-quiz:latest:latest`
 

@@ -3,7 +3,6 @@ FROM node
 WORKDIR /app
 
 COPY bot.py .
-COPY config.json .
 COPY ./songs/ ./songs/
 COPY ./spotifyToYoutube.py .
 COPY ./requirements.txt .

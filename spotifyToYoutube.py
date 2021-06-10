@@ -1,18 +1,23 @@
 # coding: utf-8
 import json
-import spotipy
-from spotipy.oauth2 import SpotifyClientCredentials
-from youtubesearchpython import VideosSearch
+import os
 import sys
 import time
+from pathlib import Path
 
-with open(r'config.json') as json_file:
-    APIs = json.load(json_file)
+import spotipy
+from dotenv import load_dotenv
+from spotipy.oauth2 import SpotifyClientCredentials
+from youtubesearchpython import VideosSearch
+
+load_dotenv(dotenv_path=Path('.')/'.env')
 
 
 def getTracks(playlistURL):
+    SPOTIFY_CLIENT_ID = os.getenv('SPOTIFY_CLIENT_ID')
+    SPOTIFY_CLIENT_SECRET = os.getenv('SPOTIFY_CLIENT_SECRET')
     client_credentials_manager = SpotifyClientCredentials(
-        APIs["spotify"]["client_id"], APIs["spotify"]["client_secret"])
+        SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET)
     spotify = spotipy.Spotify(
         client_credentials_manager=client_credentials_manager)
 

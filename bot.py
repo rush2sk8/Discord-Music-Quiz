@@ -3,6 +3,7 @@ import json
 import os
 import random
 import re
+import sys
 import subprocess
 from pathlib import Path
 
@@ -15,9 +16,24 @@ from fuzzywuzzy import fuzz
 
 load_dotenv(dotenv_path=Path('.')/'.env')
 
-DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
-NUM_SONGS_PER_ROUND = int(os.getenv('NUM_SONGS_PER_ROUND'))
-QUIZ_CHANNEL_NAME = os.getenv('QUIZ_CHANNEL_NAME')
+successful_load = True
+
+try:
+    DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+    NUM_SONGS_PER_ROUND = int(os.getenv('NUM_SONGS_PER_ROUND'))
+    QUIZ_CHANNEL_NAME = os.getenv('QUIZ_CHANNEL_NAME')
+    SPOTIFY_CLIENT_ID = os.getenv('SPOTIFY_CLIENT_ID')
+    SPOTIFY_CLIENT_SECRET = os.getenv('SPOTIFY_CLIENT_SECRET')
+except:
+    successful_load = False
+
+if successful_load == False or \
+        DISCORD_TOKEN is None or \
+        SPOTIFY_CLIENT_ID is None or \
+        SPOTIFY_CLIENT_SECRET is None or \
+        QUIZ_CHANNEL_NAME is None:
+    print("ENVIRONMENT VARIABLES NOT ALL SET")
+    sys.exit(1)
 
 intents = discord.Intents.default()
 intents.members = True

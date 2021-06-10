@@ -2,7 +2,7 @@
 
 [![Deploy bot](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml) ![Docker Pulls](https://img.shields.io/docker/pulls/rush2sk8/discord-music-quiz) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/rush2sk8/discord-music-quiz) ![Docker Stars](https://img.shields.io/docker/stars/rush2sk8/discord-music-quiz) 
 
-Are you the type of person who like flexing their musical knowledge? Then music bot is for you! This bot will join your voice channel and play a selection of music that you have personally loaded in. `?start-quiz` and away you go.
+Are you the type of person who like flexing their musical knowledge? Then music bot is for you! This bot will join your voice channel and play a selection of music that you have personally loaded in. `?start-quiz` and away you go. Keep in mind that the bot doesn't come with any music preloaded and that you will need to load playlists of your own into the bot. 
 
 **NOTE: This bot only works in 1 discord server at a time. SUPPORT FOR MULTIPLE GUILDS IS NOT SUPPORTED AT THIS TIME**
 

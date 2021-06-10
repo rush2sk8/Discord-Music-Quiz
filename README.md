@@ -1,6 +1,6 @@
 # Discord Music Quiz Bot
 
-[![Deploy bot](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml)
+[![Deploy bot](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/rushadantia/Discord-Music-Quiz/actions/workflows/main.yml) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/rush2sk8/discord-music-quiz) ![Docker Stars](https://img.shields.io/docker/stars/rush2sk8/discord-music-quiz) 
 
 Are you the type of person who like flexing their musical knowledge? Then music bot is for you! This bot will join your voice channel and play a selection of music that you have personally loaded in. `?start-quiz` and away you go.
 

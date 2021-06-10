@@ -34,16 +34,16 @@ Usage `python spotifyToYoutube.py <spotify playlist> [filename]`
 
 You need to supply the image with the following environment variables:
 
-* `DISCORD_TOKEN` - Your own discord developer bot token 
+* `DISCORD_TOKEN` - Your own discord [developer](https://discord.com/developers/applications) bot token 
 * `NUM_SONGS_PER_ROUND`- An integer representing the number of songs per game
 * `QUIZ_CHANNEL_NAME`- The name of the channel to play in. i.e music-quiz
-* `SPOTIFY_CLIENT_ID` - Client ID for your Spotify Developer account
-* `SPOTIFY_CLIENT_SECRET` - Client ID for your Spotify Developer account
+* `SPOTIFY_CLIENT_ID` - Client ID for your [Spotify Developer](https://developer.spotify.com/documentation/web-api/) account
+* `SPOTIFY_CLIENT_SECRET` - Client ID for your [Spotify Developer](https://developer.spotify.com/documentation/web-api/) account
 
 Run with the following command
 
 ```
-docker run -e DISCORD_TOKEN='' \
+docker run -d -e DISCORD_TOKEN='' \
      -e NUM_SONGS_PER_ROUND=10 \
      -e QUIZ_CHANNEL_NAME='music-quiz' \
      -e SPOTIFY_CLIENT_ID='' \

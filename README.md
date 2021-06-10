@@ -8,7 +8,7 @@
 
 ## Running
 
-Fill out `.env` with the fields and create `config.json` with your spotify api credentials.
+Fill out `.env` with the fields defined in `example.env`
 
 `python bot.py`
 
